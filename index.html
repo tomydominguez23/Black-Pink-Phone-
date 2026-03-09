@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Pink Phone | Tienda de Telefonos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <header class="header">
+      <div class="container topbar">
+        <a class="logo" href="#">Black Pink <span>Phone</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="#catalogo">Catalogo</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#opiniones">Opiniones</a>
+        </nav>
+
+        <div class="right-actions">
+          <div class="search-box">
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Buscar telefono..."
+              aria-label="Buscar telefono"
+            />
+          </div>
+          <button class="cart-btn" type="button">
+            Carrito <span id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">NUEVA COLECCION 2026</p>
+          <h1>Tu proximo smartphone premium, con estilo black + pink.</h1>
+          <p>
+            Descubre telefonos de ultima generacion con garantia, envio rapido y
+            ofertas semanales. Black Pink Phone combina tecnologia y moda en una
+            tienda pensada para ti.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#catalogo">Ver catalogo</a>
+            <a class="btn btn-ghost" href="#ofertas">Ver ofertas</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>+3,200</strong>
+              <span>Ventas al mes</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Clientes felices</span>
+            </div>
+            <div>
+              <strong>24h</strong>
+              <span>Despacho rapido</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80"
+            alt="Telefono premium color negro"
+          />
+          <div class="hero-card-info">
+            <p>Producto top de la semana</p>
+            <h3>iPhone 16 Pro Max</h3>
+            <strong>$5.199.000 COP</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="container categories">
+        <article>
+          <h3>Gama premium</h3>
+          <p>Modelos flagship con la mejor camara y maximo rendimiento.</p>
+        </article>
+        <article>
+          <h3>Gaming phone</h3>
+          <p>Pantallas fluidas y potencia para jugar sin limites.</p>
+        </article>
+        <article>
+          <h3>Bateria duradera</h3>
+          <p>Telefonos con autonomia para todo el dia y carga rapida.</p>
+        </article>
+        <article>
+          <h3>Mejor precio</h3>
+          <p>Opciones calidad/precio para comprar inteligente.</p>
+        </article>
+      </section>
+
+      <section class="container products-section" id="catalogo">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PRODUCTOS DESTACADOS</p>
+            <h2>Catalogo Black Pink Phone</h2>
+          </div>
+          <div class="filters" id="brandFilters">
+            <button class="active" data-filter="all">Todos</button>
+            <button data-filter="Apple">Apple</button>
+            <button data-filter="Samsung">Samsung</button>
+            <button data-filter="Xiaomi">Xiaomi</button>
+            <button data-filter="Google">Google</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <article class="product-card" data-brand="Apple" data-name="iPhone 16 Pro Max">
+            <img
+              src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=80"
+              alt="iPhone 16 Pro Max"
+            />
+            <h3>iPhone 16 Pro Max</h3>
+            <p>256GB | Titanio Negro</p>
+            <div class="price">
+              <span class="old">$5.699.000</span>
+              <strong>$5.199.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Samsung" data-name="Samsung Galaxy S25 Ultra">
+            <img
+              src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=700&q=80"
+              alt="Samsung Galaxy S25 Ultra"
+            />
+            <h3>Galaxy S25 Ultra</h3>
+            <p>512GB | 200MP AI Camera</p>
+            <div class="price">
+              <span class="old">$5.299.000</span>
+              <strong>$4.899.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Xiaomi" data-name="Xiaomi 15 Pro">
+            <img
+              src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=700&q=80"
+              alt="Xiaomi 15 Pro"
+            />
+            <h3>Xiaomi 15 Pro</h3>
+            <p>256GB | Leica Lens</p>
+            <div class="price">
+              <span class="old">$3.499.000</span>
+              <strong>$3.099.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Google" data-name="Google Pixel 10 Pro">
+            <img
+              src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=700&q=80"
+              alt="Google Pixel 10 Pro"
+            />
+            <h3>Google Pixel 10 Pro</h3>
+            <p>256GB | Android puro</p>
+            <div class="price">
+              <span class="old">$4.199.000</span>
+              <strong>$3.799.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Apple" data-name="iPhone 16">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80"
+              alt="iPhone 16"
+            />
+            <h3>iPhone 16</h3>
+            <p>128GB | Rosa Neon Edition</p>
+            <div class="price">
+              <span class="old">$4.099.000</span>
+              <strong>$3.699.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Samsung" data-name="Samsung Galaxy Z Flip 7">
+            <img
+              src="https://images.unsplash.com/photo-1610792516307-ea5acd9c3b00?auto=format&fit=crop&w=700&q=80"
+              alt="Samsung Galaxy Z Flip 7"
+            />
+            <h3>Galaxy Z Flip 7</h3>
+            <p>512GB | Plegable premium</p>
+            <div class="price">
+              <span class="old">$5.099.000</span>
+              <strong>$4.699.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Xiaomi" data-name="Redmi Note 15 Pro Plus">
+            <img
+              src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=700&q=80"
+              alt="Redmi Note 15 Pro Plus"
+            />
+            <h3>Redmi Note 15 Pro+</h3>
+            <p>256GB | 120W HyperCharge</p>
+            <div class="price">
+              <span class="old">$2.299.000</span>
+              <strong>$1.999.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+
+          <article class="product-card" data-brand="Google" data-name="Google Pixel 9a">
+            <img
+              src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=700&q=80"
+              alt="Google Pixel 9a"
+            />
+            <h3>Google Pixel 9a</h3>
+            <p>128GB | Gran camara nocturna</p>
+            <div class="price">
+              <span class="old">$2.799.000</span>
+              <strong>$2.399.000</strong>
+            </div>
+            <button class="add-cart">Agregar al carrito</button>
+          </article>
+        </div>
+
+        <p id="noResults" class="no-results hidden">
+          No encontramos productos con ese filtro o busqueda.
+        </p>
+      </section>
+
+      <section class="container promo" id="ofertas">
+        <div>
+          <p class="eyebrow">OFERTA FLASH</p>
+          <h2>Hasta 35% OFF en equipos seleccionados</h2>
+          <p>
+            Aprovecha descuento, accesorios de regalo y envio gratis a todo el
+            pais por compras superiores a $1.000.000 COP.
+          </p>
+          <a href="#catalogo" class="btn btn-primary">Comprar ahora</a>
+        </div>
+      </section>
+
+      <section class="container benefits" id="beneficios">
+        <article>
+          <h3>Garantia oficial</h3>
+          <p>Cobertura de fabrica y soporte local confiable.</p>
+        </article>
+        <article>
+          <h3>Pagos seguros</h3>
+          <p>PSE, tarjeta, transferencia y cuotas sin interes.</p>
+        </article>
+        <article>
+          <h3>Entrega nacional</h3>
+          <p>Despachos en 24-72 horas segun tu ciudad.</p>
+        </article>
+        <article>
+          <h3>Asesoria experta</h3>
+          <p>Te ayudamos a elegir el telefono perfecto para ti.</p>
+        </article>
+      </section>
+
+      <section class="container testimonials" id="opiniones">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CLIENTES REALES</p>
+            <h2>Lo que dicen de Black Pink Phone</h2>
+          </div>
+        </div>
+        <div class="testimonial-grid">
+          <article>
+            <p>
+              "Compre mi iPhone y llego en 1 dia. Todo original, excelente
+              atencion y precio mejor que en otros lugares."
+            </p>
+            <strong>- Laura M.</strong>
+          </article>
+          <article>
+            <p>
+              "La web esta super clara, pude comparar equipos rapido y el pago
+              fue muy facil. Recomendado 100%."
+            </p>
+            <strong>- Andres P.</strong>
+          </article>
+          <article>
+            <p>
+              "Tenian justo el modelo que queria en color rosa. Ademas me
+              incluyeron case y vidrio de regalo."
+            </p>
+            <strong>- Sofia R.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="container newsletter">
+        <h2>Recibe promociones exclusivas</h2>
+        <p>Suscribete y obten un cupon de bienvenida del 10% en tu primera compra.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu correo electronico" required />
+          <button type="submit">Quiero mi cupon</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <a class="logo" href="#">Black Pink <span>Phone</span></a>
+          <p>Tienda online de telefonos premium y accesorios originales.</p>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>WhatsApp: +57 300 123 4567</p>
+          <p>Email: ventas@blackpinkphone.com</p>
+        </div>
+        <div>
+          <h4>Horario</h4>
+          <p>Lunes a Sabado</p>
+          <p>9:00 am - 7:00 pm</p>
+        </div>
+      </div>
+      <p class="copy">© <span id="currentYear"></span> Black Pink Phone. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
